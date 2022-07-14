@@ -1,0 +1,21 @@
+// @import './variables';
+
+@mixin pyramidBtn {
+  color: $pyramid-color;
+  border: 1px solid $pyramid-color;
+  padding: 8px 30px;
+  &:hover {
+    color: #fff;
+    background-color: $pyramid-color;
+  }
+}
+
+@mixin turkeyBtn {
+  color: $turkey-color;
+  border: 1px solid $turkey-color;
+  padding: 8px 30px;
+  &:hover {
+    color: #fff;
+    background-color: $turkey-color;
+  }
+}
