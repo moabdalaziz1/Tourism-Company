@@ -74,6 +74,9 @@ section.landing-tour {
     }
   }
 }
+.active-arrow {
+  opacity: 1;
+}
 // Start Responsive
 @media (max-width: 1400px)  {
   section.landing-tour {

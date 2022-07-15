@@ -19,3 +19,17 @@ function getFullYear() {
   footerDate.innerHTML = fullYear;
 }
 getFullYear();
+
+
+
+// For The Arrows In The Sliders
+let prevArrow = document.querySelector('.prev-arrow');
+let nextArrow = document.querySelector('.next-arrow');
+prevArrow.addEventListener('click', (e) => {
+  nextArrow.classList.remove('active-arrow');
+  e.currentTarget.classList.add('active-arrow');
+});
+nextArrow.addEventListener('click', (e) => {
+  prevArrow.classList.remove('active-arrow');
+  e.currentTarget.classList.add('active-arrow');
+});

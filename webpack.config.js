@@ -23,6 +23,12 @@ module.exports = {
     } /* عشان لما الملفات اتحذفت من مجلد ال build */,
   },
 
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+  },
+
   module: {
     rules: [
       // Styling
@@ -102,6 +108,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'turkey.html',
       template: './src/turkey.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'register.html',
+      template: './src/register.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'login.html',
+      template: './src/login.html',
     }),
 
     new MiniCssExtractPlugin({

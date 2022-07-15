@@ -1,6 +1,7 @@
 @import './variables';
 @import './mixins';
 @import './tours.scss';
+@import './register&login.scss';
 
 
 // For The Icon
@@ -203,6 +204,14 @@ footer {
       .card {
         height: auto;
       }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    .desc {
+      width: 80%;
     }
   }
 }

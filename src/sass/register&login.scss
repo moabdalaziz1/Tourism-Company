@@ -1,0 +1,56 @@
+.signup {
+  width: 100%;
+  height: 100vh;
+  background-color: $register-bg-color;
+  padding-top: 3rem;
+  .text {
+    h3 {
+      font-family:'Cairo', 'ArefRuqaa', sans-serif;
+      text-align: center;
+      color: $white-color;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .card {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #161b22;
+    label {
+      color: $white-color;
+    }
+    input {
+      border: 1px solid #30363d;
+      background-color: $register-bg-color;
+      color: $white-color;
+      &:focus {
+        background-color: $register-bg-color;
+        color: $white-color;
+        box-shadow: inset 0 0 0 1px #58a6ff;
+        border-color: #58a6ff;
+        outline: none;
+      }
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator { 
+      background: $white-color;
+      border-radius: 50%; 
+    }
+    .btn {
+      color: $white-color;
+      background-color: #238636;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      opacity: .8;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .ask {
+      text-decoration: none;
+      color: #1f6feb;
+      &:hover {
+        opacity: 1;
+        text-decoration: underline; 
+      }
+    }
+  }
+}
